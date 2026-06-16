@@ -1,0 +1,271 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SOHO LUXE - Modern Luxury Salon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#613d3d",
+                        "primary-fixed-dim": "#edbaba",
+                        "surface-container": "#f0eded",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#464242",
+                        "surface": "#fcf9f8",
+                        "on-secondary-fixed": "#221a0d",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e4e2e1",
+                        "tertiary-fixed-dim": "#ccc5c5",
+                        "surface-container-high": "#eae7e7",
+                        "tertiary-container": "#b4aeae",
+                        "on-primary-container": "#5c3939",
+                        "on-secondary-container": "#6c6150",
+                        "on-tertiary-fixed": "#1e1b1b",
+                        "primary-container": "#d4a3a3",
+                        "surface-variant": "#e4e2e1",
+                        "background": "#fcf9f8",
+                        "surface-tint": "#7c5454",
+                        "on-surface": "#1b1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-primary": "#edbaba",
+                        "surface-bright": "#fcf9f8",
+                        "outline-variant": "#d4c2c2",
+                        "secondary-fixed": "#f0e0cb",
+                        "error-container": "#ffdad6",
+                        "outline": "#827473",
+                        "on-secondary-fixed-variant": "#504536",
+                        "secondary-container": "#eeddc8",
+                        "inverse-surface": "#303030",
+                        "inverse-on-surface": "#f3f0f0",
+                        "tertiary": "#625d5d",
+                        "on-surface-variant": "#504444",
+                        "primary": "#7c5454",
+                        "primary-fixed": "#ffdad9",
+                        "secondary-fixed-dim": "#d4c4b0",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed": "#e8e1e1",
+                        "on-error": "#ffffff",
+                        "secondary": "#685d4c",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1b1c1c",
+                        "on-primary-fixed": "#2f1314",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a4646"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "margin-desktop": "80px",
+                        "stack-md": "32px",
+                        "margin-tablet": "40px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "16px",
+                        "stack-lg": "64px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md full-width top-0 sticky z-50 border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tighter">Soho Salon</div>
+<nav class="hidden md:flex gap-8 items-center font-body-md text-body-md uppercase tracking-widest">
+<a class="text-on-surface-variant dark:text-on-surface-variant/70 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/70 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Gallery</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/70 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Bridal</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/70 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/70 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Location</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors duration-300">
+            Book Now
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] flex items-center justify-center bg-surface-container overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Salon Interior" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa5HDmmjF0PEoTHd1oqElyUcnwn_P3odRjXBZsD5bwToTxI_4rzTqyNa7H2ZdaOEcITLnIm3dwg__fkNi2E8hhdFp4gtCmd_AUxw7fP6hojSneEDDcwOHM3KIaZCzYx_VuYrAPCU1rbdzzgfXCUi6TuIjxeuwOBw2Qb0zTkEDmNt9T6IAOfC7Q4ZlRWUrmc1-Y2OGHms5wGke68T0Gfv_U3hJMwzB4yLhsmchCIY_eTJclJAolupdgPAw65rQFpKU1ml3BpJtW7O4">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/30 to-surface/90 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center gap-stack-md">
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] md:leading-[72px] text-on-surface mb-4">
+                    The Art of Beauty Reimagined
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+                    Experience modern luxury and meticulous artistry in a serene, contemporary space designed for your ultimate transformation.
+                </p>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-lg hover:bg-surface-tint transition-all duration-300 shadow-[0px_10px_30px_rgba(45,45,45,0.05)]">
+                    Book Your Experience
+                </button>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Our Expertise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Curated services tailored to elevate your natural beauty with precision and care.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="bg-surface rounded-xl p-8 hover:-translate-y-2 transition-transform duration-500 flex flex-col items-start shadow-[0px_10px_30px_rgba(45,45,45,0.02)]">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="content_cut">content_cut</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Hair Artistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">From precision cuts to bespoke color transformations, our stylists craft looks that reflect your unique identity.</p>
+<a class="text-primary font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-1 hover:text-surface-tint transition-colors" href="#">Explore Services</a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface rounded-xl p-8 hover:-translate-y-2 transition-transform duration-500 flex flex-col items-start shadow-[0px_10px_30px_rgba(45,45,45,0.02)]">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="brush">brush</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Makeup Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Enhance your features with our professional makeup applications, perfect for any occasion or editorial need.</p>
+<a class="text-primary font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-1 hover:text-surface-tint transition-colors" href="#">Explore Services</a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface rounded-xl p-8 hover:-translate-y-2 transition-transform duration-500 flex flex-col items-start shadow-[0px_10px_30px_rgba(45,45,45,0.02)]">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Bridal Couture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Comprehensive bridal packages ensuring you look radiant and flawless on your most important day.</p>
+<a class="text-primary font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-1 hover:text-surface-tint transition-colors" href="#">Explore Bridal</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformation Portfolio -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Transformations</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A curated gallery of our recent artistry.</p>
+</div>
+<button class="text-primary font-label-sm text-label-sm uppercase tracking-widest border border-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-on-primary transition-colors duration-300">
+                        View Full Gallery
+                    </button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-gutter auto-rows-[250px] md:auto-rows-[400px]">
+<div class="col-span-2 row-span-2 rounded-xl overflow-hidden group relative">
+<img alt="Brunette wavy hair transformation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi6cCXa0cwnCEtBY8VwVJcmSpbUB1hBwHnB6kjS3tLsOsClX4SGJqrzh13X2CufLuRt3QaXM-0pTinVjaHjlSgxUaO2n8WE72eMT7WIv-MYPKboCJm6bVRcj8bZzpyZIpywdPJ9At-TAqWviUKILbdsB36FiTkdMZRYrP0ZJ3docjieRC0ZYbUP53XiMThqXfg6PiSV_fsc5_hCFGQnHuMRbloasMOPG-D9JG5z1Jv5b3E7wkKyjzMhIcKtfUE_ZM7Ta1MQlGnn-s">
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="bg-surface text-on-surface px-4 py-2 rounded-full font-label-sm text-label-sm uppercase">Balayage</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img alt="Vibrant red hair color" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7tHdtpcnaMsZ82-Mx307AWGDG8EpFyj0RLV-ZWKM4M9jJA5i5UjqYDaO2Yhab1030DMdBItE9YROMgDtmgX0pNIXOBviJMX0ALolU-pT4PWQgpCFgrZajdlAHPH38pxy9ib1yVdOmQhy6_Q4qpkIUI4RolMzKHURmCwlDu1jlI9u9yXDjI_tBwhTtSbbDdYJL_jfP2GZTmJurVPVucS3qD1ePFn1b9u2f9EuQVLd365W7igWWAk8dBLkuWzp8Ndv98XlaRHQ8jf0">
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img alt="Blonde highlights" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoNo0_wTnaYayooQF3oykD8VjZgnt58gUo3OSmxd_C3V5EoyRSOH1ob0p7BH4UykMRkxPon3n_8WiuMgAvZ8l8jA-M4O634-FHu3feVZWJ-masKDGXh7YMOm0Zm8LLMm_erEV3lqZ2ZXq9WhGcjcyryVYgnDBXAthAZUu87bCkJRSo06txuTUqev_Iy2txkNTSrDHkAvcplsXAj1YixNnU6aRhN5Cffe1N5tdYpjn1EoHGWGr0eyjyLDQKREYEQC_tAHzI0UHJS0w">
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img alt="Long blonde hair styling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1EKxQO5eoMtvhK6--0TGGKyEgRTaDdOIANVOIMyy__o1p9fhFqpw8orbqUi3kD3JqJmSBd26ZIwmEImAD9M-6lUtxhdAyUdq3DE-4dm4BWaT1o5yu3OtnCDJyazqYPdwG0kQkuTOEyDocZvsvi0BGB_DZm6U19MHosXJ7LYr8flHPoBlE4p38_UVjNMzutDmhO-BElV8qx8gQR_1eWGFgEG2kAivuicKsrHM4VPyzrb9x_NiKk4fLjZdOUfK9KLfkJ7XFQER60Es">
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img alt="Blonde waves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Sx_GRd3UiWgx4Z9rLOFb8C22GAocbSrruvKCwMNdWmMnVCAc3F32kTl0GiAFkMZt5aAUd6f1p-t0niBIjrlKfeseBvKX4ddDR0LZjkigmOODe8Fg2yfiguNwevv6O8Qr3jZ93QMvbpoRCg3fmXdUhaQL3071SRfs-QIHL9Kg9lsS_4Jpz9M0SI0VF_9NUh4mLu9DHbseGAhklFjPGEaASTJxQMgh1sMNasRva8cKlf_7KKqw3hYVzXmxgqO6wsn6YsiWGQaSBCY">
+</div>
+<div class="col-span-2 rounded-xl overflow-hidden group relative">
+<img alt="Hair sectioning process" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClW_1X7jTE8_wzeCZN7DmnMu2qAdOASgXZ0RUxKMITTcxeITK2p8kEaf_rzfoWBi7XKGzYEQxmsVlvZv5iTMBgng2WW7sBVQnT17JGYXHeNoKLGVWIH2GnhTQNZtcfn_wNiC0ya3cCi-SrmPReAKJW-BGmyVxH0DY5ZF16R6kcAYr15Zn9IQGu77W_oNh6Dgmtd82hbQELppFFBkALPL7YLQdQ_etUl21GuEpOPIhoZiBPIy9x_1QkQNDct9dFFmqGiKedRoWRkKQ" style="object-position: top;">
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-secondary-container/30 relative">
+<div class="max-w-4xl mx-auto bg-surface rounded-xl p-8 md:p-16 shadow-[0px_20px_40px_rgba(0,0,0,0.03)] border border-outline-variant/20">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Reserve Your Time</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Request an appointment and our concierge will confirm your booking.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant mb-2" for="name">Full Name</label>
+<input class="border-0 border-b border-outline bg-transparent px-0 py-2 focus:ring-0 focus:border-primary font-body-md text-on-surface placeholder-outline-variant transition-colors" id="name" placeholder="Jane Doe" type="text">
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant mb-2" for="email">Email Address</label>
+<input class="border-0 border-b border-outline bg-transparent px-0 py-2 focus:ring-0 focus:border-primary font-body-md text-on-surface placeholder-outline-variant transition-colors" id="email" placeholder="jane@example.com" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant mb-2" for="service">Service Selection</label>
+<select class="border-0 border-b border-outline bg-transparent px-0 py-2 focus:ring-0 focus:border-primary font-body-md text-on-surface transition-colors" id="service">
+<option>Select a service...</option>
+<option>Signature Cut &amp; Style</option>
+<option>Balayage &amp; Color</option>
+<option>Event Makeup</option>
+<option>Bridal Consultation</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant mb-2" for="date">Preferred Date</label>
+<input class="border-0 border-b border-outline bg-transparent px-0 py-2 focus:ring-0 focus:border-primary font-body-md text-on-surface transition-colors" id="date" type="date">
+</div>
+</div>
+<div class="pt-6 flex justify-center">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-12 py-4 rounded-lg hover:bg-surface-tint transition-all duration-300 w-full md:w-auto shadow-[0px_10px_20px_rgba(124,84,84,0.15)]" type="submit">
+                            Request Appointment
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-lg gap-gutter fade-in duration-500 full-width">
+<div class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface">Soho Salon</div>
+<nav class="flex flex-wrap justify-center gap-6 font-label-sm text-label-sm uppercase tracking-widest">
+<a class="text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Careers</a>
+<a class="text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact Us</a>
+</nav>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-container dark:text-tertiary-fixed text-center md:text-right">© 2024 SOHO SALON. ALL RIGHTS RESERVED.</div>
+</footer>
+
+
+</body></html>
